@@ -1,0 +1,21 @@
+html
+    head
+        title=searchQuery
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet")
+        script(src="https://kit.fontawesome.com/264882c67d.js" crossorigin="anonymous")
+    body 
+        style
+            include ./styles/cards.css
+            include ./styles/reset.css
+        h1=searchQuery
+        .card-results
+            for card in cards
+                .card-container
+                    .img-container
+                        img(src=card.card_images[0].image_url)
+                    strong=card.name
+                    em=card.type
+                    p=card.desc

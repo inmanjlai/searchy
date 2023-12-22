@@ -1,0 +1,39 @@
+body {
+    background-color: #a2c1b7;
+    font-family: 'Poppins', sans-serif;
+}
+
+body h1 {
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    color: #697d77;
+}
+
+.card-results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.card-container {
+    width: 350px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border-bottom: 1px solid #697d77;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-container img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
