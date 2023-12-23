@@ -24,8 +24,28 @@ form {
     width: 80%;
     max-width: 800px;
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-size: 2rem;
+    color: #697d77;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+form label i {
+    font-size: 2rem;
+}
+
+#searchbar {
+    display: flex;
     flex-direction: row;
     gap: 1rem;
+    width: 100%;
     align-items: center;
 }
 
@@ -34,7 +54,7 @@ form i {
     color: #697d77;
 }
 
-form i:hover {
+form #searchbar i:hover {
     cursor: pointer;
 }
 

@@ -16,12 +16,16 @@ html
             p#error-message=error
 
         form(method='POST' action='/cards')
-            if searchQuery
-                input(placeholder="Search for a card..." name='searchQuery' id='search-query' value=searchQuery type=search)
-            else
-                input(placeholder="Search for a card..." name='searchQuery' id='search-query' type=search)
+            label
+                i.fa-solid.fa-shield-halved
+                | Domain Search
+            div#searchbar 
+                if searchQuery
+                    input(placeholder="Search for a card..." name='searchQuery' id='search-query' value=searchQuery type=search)
+                else
+                    input(placeholder="Search for a card..." name='searchQuery' id='search-query' type=search)
 
-            i.fa-solid.fa-circle-info
+                i.fa-solid.fa-circle-info#info
 
             dialog
                 .dialog-content
@@ -97,10 +101,6 @@ html
                         | press 
                         strong ESC 
                         | to return to search
-
-        #link-to-github
-            i.fa-brands.fa-github
-            a(href="https://github.com/inmanjlai") Ismail Manjlai
 
         script 
             include ./scripts/syntaxDialog.js
